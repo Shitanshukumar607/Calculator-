@@ -1,0 +1,79 @@
+body {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #5E5E60;
+    height: 1000px;
+    width: 620px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 5px black;
+}
+
+.div1 {
+    flex-basis: 270px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.output2{
+    position: absolute ;
+    font-size: 60px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+.output {
+    font-size: 80px;
+    margin-right: 20px;
+    overflow: scroll;
+}
+
+.div2 {
+    flex-basis: 730px;
+    display: grid;
+    grid-template-columns: 155px 155px 155px 155px;
+    grid-gap: 0px;
+}
+
+.div2 div {
+    height: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last {
+    grid-column: span 2;
+}
+
+.div2 div button {
+    height: 110px;
+    width: 110px;
+    border-radius: 4px;
+    font-size: 40px;
+    box-shadow: -8px -8px 5px black;
+    transition: box-shadow linear 0.1s;
+}
+
+.div2 div .last-btn {
+    width: 255px;
+}
+
+.div2 div button:active {
+    box-shadow: -4px -4px 5px black;
+    height: 100px;
+    width: 100px;
+}
+
+.div2 div .last-btn:active {
+    width: 240px;
+}
